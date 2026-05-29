@@ -178,7 +178,7 @@ body{
   background:#ffe3ee;
 }
 
-/* PROJECT BUTTON */
+
 .project-btn{
   display:inline-block;
   margin-top:15px;
@@ -232,7 +232,7 @@ body{
 }
 
 .social-link img {
-  width: 40px;        /* controls size */
+  width: 40px;        
   height: 40px;
   object-fit: contain;
   transition: 0.3s;
@@ -250,7 +250,7 @@ body{
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* FOOTER */
+
 footer{
   text-align:center;
   padding:40px;
