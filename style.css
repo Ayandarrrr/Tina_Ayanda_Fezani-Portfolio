@@ -14,7 +14,7 @@ body{
   color:#2b2b2b;
 }
 
-/* NAVBAR */
+
 .navbar{
   position:fixed;
   top:0;
@@ -52,7 +52,7 @@ body{
   color:#ff4f86;
 }
 
-/* HERO */
+
 .hero{
   min-height:90vh;
   display:flex;
@@ -88,7 +88,7 @@ body{
   background:#ff4f86;
 }
 
-/* SECTIONS */
+
 .section{
   padding:70px 20px;
   max-width:1000px;
@@ -107,7 +107,7 @@ body{
   opacity:0.85;
 }
 
-/* SKILLS */
+
 .skills{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
