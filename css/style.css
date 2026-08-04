@@ -36,3 +36,71 @@ body{
     font-family:'Inter',sans-serif;
 
 }
+
+
+
+.navbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 8%;
+
+    position:fixed;
+
+    top:0;
+
+    background:#0D0D0D;
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.logo span{
+
+    color:var(--pink);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--pink);
+
+}
