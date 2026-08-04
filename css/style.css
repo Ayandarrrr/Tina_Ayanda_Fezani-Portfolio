@@ -104,3 +104,59 @@ nav a:hover{
     color:var(--pink);
 
 }
+
+
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    background:var(--pink);
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--pink-hover);
+
+}
+
+.secondary-btn{
+
+    border:1px solid var(--pink);
+
+    color:var(--pink);
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--pink);
+
+    color:white;
+
+}
