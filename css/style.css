@@ -416,6 +416,63 @@ nav a:hover{
 
 }
 
+/* Hide scrollbar */
+
+.projects-slider::-webkit-scrollbar{
+    height:8px;
+}
+
+.projects-slider::-webkit-scrollbar-thumb{
+    background:var(--pink);
+    border-radius:20px;
+}
+
+.projects-slider::-webkit-scrollbar-track{
+    background:#1b1b1b;
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card{
+
+    flex:0 0 380px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    scroll-snap-align:center;
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--pink);
+
+    box-shadow:0 15px 35px rgba(255,79,139,.25);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
 
 /* ===========================
    FOOTER
