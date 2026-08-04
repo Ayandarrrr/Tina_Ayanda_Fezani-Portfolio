@@ -531,27 +531,93 @@ nav a:hover{
 
 .project-buttons{
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-    padding:0 25px 30px;
+    padding:25px;
 
 }
 
-.project-buttons a{
+.button-row{
 
-    text-decoration:none;
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.button-row a{
+
+    flex:1;
 
     text-align:center;
 
-    padding:13px;
+    text-decoration:none;
 
-    border-radius:10px;
+    padding:14px;
+
+    border-radius:12px;
 
     transition:.3s;
+
+    font-weight:600;
+
+}
+
+/* Live Demo */
+
+.live-btn{
+
+    background:var(--pink);
+
+    color:white;
+
+}
+
+.live-btn:hover{
+
+    background:var(--pink-hover);
+
+}
+
+/* GitHub */
+
+.github-btn{
+
+    border:1px solid var(--pink);
+
+    color:var(--pink);
+
+}
+
+.github-btn:hover{
+
+    background:var(--pink);
+
+    color:white;
+
+}
+
+/* Case Study */
+
+.case-btn{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.case-btn:hover{
+
+    color:var(--pink);
 
 }
 
