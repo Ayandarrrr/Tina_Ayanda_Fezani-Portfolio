@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
 
+/* ==========================
+   RESET
+========================== */
+
 *{
     margin:0;
     padding:0;
@@ -22,38 +26,32 @@
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
-
     background:var(--background);
-
     color:var(--white);
-
     font-family:'Inter',sans-serif;
-
 }
 
-
+/* ==========================
+   NAVBAR
+========================== */
 
 .navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
 
     width:100%;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:25px 8%;
-
-    position:fixed;
-
-    top:0;
 
     background:#0D0D0D;
 
@@ -66,9 +64,7 @@ body{
 .logo{
 
     font-size:1.8rem;
-
     font-weight:700;
-
     font-family:'Poppins',sans-serif;
 
 }
@@ -82,19 +78,16 @@ body{
 nav ul{
 
     display:flex;
-
     gap:40px;
-
     list-style:none;
 
 }
 
 nav a{
 
-    color:white;
-
+    color:var(--white);
     text-decoration:none;
-
+    font-weight:500;
     transition:.3s;
 
 }
@@ -105,23 +98,113 @@ nav a:hover{
 
 }
 
+/* ==========================
+   HERO
+========================== */
 
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:120px 8% 80px;
+
+    gap:60px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.subtitle{
+
+    color:var(--pink);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    line-height:1.2;
+
+    font-family:'Poppins',sans-serif;
+
+    margin-bottom:30px;
+
+}
+
+.description{
+
+    max-width:600px;
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* temporary placeholder */
+
+.hero-image::before{
+
+    content:"";
+
+    width:380px;
+    height:380px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,#ff4f8b 0%, #2b0f1d 45%, transparent 70%);
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
 
 .buttons{
 
     display:flex;
-
     gap:20px;
 
 }
 
 .primary-btn{
 
+    display:inline-block;
+
+    padding:15px 30px;
+
     background:var(--pink);
 
     color:white;
-
-    padding:15px 30px;
 
     border-radius:10px;
 
@@ -135,15 +218,19 @@ nav a:hover{
 
     background:var(--pink-hover);
 
+    transform:translateY(-3px);
+
 }
 
 .secondary-btn{
 
+    display:inline-block;
+
+    padding:15px 30px;
+
     border:1px solid var(--pink);
 
     color:var(--pink);
-
-    padding:15px 30px;
 
     border-radius:10px;
 
@@ -158,5 +245,7 @@ nav a:hover{
     background:var(--pink);
 
     color:white;
+
+    transform:translateY(-3px);
 
 }
