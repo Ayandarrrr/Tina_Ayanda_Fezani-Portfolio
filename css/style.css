@@ -473,6 +473,28 @@ nav a:hover{
 
 }
 
+/* ===========================
+   CONTENT
+=========================== */
+
+.project-card h2{
+
+    padding:25px 25px 10px;
+
+    font-size:1.6rem;
+
+}
+
+.project-card p{
+
+    padding:0 25px;
+
+    color:var(--grey);
+
+    line-height:1.7;
+
+}
+
 
 /* ===========================
    FOOTER
