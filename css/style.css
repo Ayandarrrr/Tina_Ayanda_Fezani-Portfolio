@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
 
-/* ==========================
-   RESET
-========================== */
 
 *{
     margin:0;
@@ -35,9 +32,7 @@ body{
     font-family:'Inter',sans-serif;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
+
 
 .navbar{
 
@@ -98,9 +93,6 @@ nav a:hover{
 
 }
 
-/* ==========================
-   HERO
-========================== */
 
 .hero{
 
@@ -185,9 +177,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   BUTTONS
-========================== */
+
 
 .buttons{
 
