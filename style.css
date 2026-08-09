@@ -29,7 +29,6 @@ body {
     width: 100%;
     background: #0b0b0b;
     border-bottom: 1px solid #242424;
-
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -39,7 +38,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-
     min-height: 85px;
 
     display: flex;
@@ -48,17 +46,13 @@ body {
 }
 
 
-/* =====================================================
-   LOGO
-===================================================== */
+/* Logo */
 
 .logo {
     color: #ffffff;
     text-decoration: none;
-
     font-size: 30px;
     font-weight: 700;
-
     letter-spacing: -1px;
 }
 
@@ -67,22 +61,18 @@ body {
 }
 
 
-/* =====================================================
-   NAVIGATION
-===================================================== */
+/* Navigation */
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: 35px;
-
     list-style: none;
 }
 
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
-
     font-size: 15px;
     font-weight: 500;
 
@@ -101,16 +91,13 @@ body {
 
 .projects-section {
     width: 100%;
-
     padding: 90px 5% 110px;
-
     background: #0d0d0d;
 }
 
 .projects-container {
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
 }
 
@@ -121,38 +108,28 @@ body {
 
 .projects-heading {
     text-align: center;
-
     max-width: 750px;
-
     margin: 0 auto 55px;
 }
 
 .section-label {
     color: #ff4081;
-
     font-size: 13px;
     font-weight: 700;
-
     letter-spacing: 3px;
-
     margin-bottom: 12px;
 }
 
 .projects-heading h1 {
     font-size: 48px;
-
     line-height: 1.2;
-
     margin-bottom: 18px;
-
     color: #ffffff;
 }
 
 .section-description {
     color: #aaaaaa;
-
     font-size: 16px;
-
     line-height: 1.8;
 }
 
@@ -168,32 +145,44 @@ body {
 
     width: 100%;
 
-    /* IMPORTANT:
-       Keeps all cards in ONE horizontal row */
-    flex-wrap: nowrap;
-
-    /* Allows sideways scrolling */
+    /* THIS MAKES THE CARDS SLIDE HORIZONTALLY */
     overflow-x: auto;
-
     overflow-y: hidden;
 
     scroll-behavior: smooth;
 
-    /* Gives the cards some breathing room */
-    padding: 10px 8px 30px;
+    /* Gives the scrollbar some breathing room */
+    padding: 10px 5px 25px;
 
-    /* Firefox scrollbar */
-    scrollbar-width: none;
+    /* Prevents cards from wrapping */
+    flex-wrap: nowrap;
 
-    /* Internet Explorer */
-    -ms-overflow-style: none;
+    /* Makes scrolling feel nicer */
+    scroll-snap-type: x proximity;
+
+    /* Firefox */
+    scrollbar-width: thin;
 }
 
 
-/* Hide scrollbar - Chrome, Safari, Edge */
+/* Chrome / Safari scrollbar */
 
 .projects-grid::-webkit-scrollbar {
-    display: none;
+    height: 8px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+    background: #181818;
+    border-radius: 20px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 20px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb:hover {
+    background: #ff4081;
 }
 
 
@@ -202,13 +191,12 @@ body {
 ===================================================== */
 
 .project-card {
-    /* THIS IS WHAT MAKES THE CARDS HORIZONTAL */
+    /* IMPORTANT:
+       This keeps every card beside the next one */
+    flex: 0 0 370px;
 
-    flex: 0 0 360px;
-
-    width: 360px;
-
-    min-width: 360px;
+    width: 370px;
+    min-width: 370px;
 
     background: #181818;
 
@@ -219,17 +207,15 @@ body {
     overflow: hidden;
 
     display: flex;
-
     flex-direction: column;
+
+    scroll-snap-align: start;
 
     transition:
         transform 0.3s ease,
         border-color 0.3s ease,
         box-shadow 0.3s ease;
 }
-
-
-/* Card hover */
 
 .project-card:hover {
     transform: translateY(-8px);
@@ -247,7 +233,6 @@ body {
 
 .project-image {
     width: 100%;
-
     height: 210px;
 
     background: #222222;
@@ -259,7 +244,6 @@ body {
 
 .project-image img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -275,35 +259,6 @@ body {
 
 
 /* =====================================================
-   IMAGE PLACEHOLDER
-===================================================== */
-
-.project-image-placeholder {
-    width: 100%;
-
-    height: 210px;
-
-    background: #222222;
-
-    color: #777777;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    padding: 20px;
-
-    font-size: 14px;
-
-    flex-shrink: 0;
-}
-
-
-/* =====================================================
    PROJECT CONTENT
 ===================================================== */
 
@@ -311,16 +266,13 @@ body {
     padding: 25px;
 
     display: flex;
-
     flex-direction: column;
 
     flex: 1;
 }
 
 
-/* =====================================================
-   PROJECT TITLE
-===================================================== */
+/* Title */
 
 .project-content h2 {
     color: #ffffff;
@@ -333,12 +285,9 @@ body {
 }
 
 
-/* =====================================================
-   PROJECT TYPE
-===================================================== */
+/* Project type */
 
-.project-type,
-.project-content h4 {
+.project-type {
     color: #ffffff;
 
     font-size: 14px;
@@ -349,12 +298,9 @@ body {
 }
 
 
-/* =====================================================
-   PROJECT DESCRIPTION
-===================================================== */
+/* Description */
 
-.project-description,
-.project-content p {
+.project-description {
     color: #b7b7b7;
 
     font-size: 14px;
@@ -369,8 +315,7 @@ body {
    TECHNOLOGY TAGS
 ===================================================== */
 
-.project-tags,
-.tags {
+.project-tags {
     display: flex;
 
     flex-wrap: wrap;
@@ -380,12 +325,10 @@ body {
     margin-bottom: 25px;
 }
 
-.project-tags span,
-.tags span {
+.project-tags span {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: #252525;
@@ -407,11 +350,10 @@ body {
 
 
 /* =====================================================
-   THREE PROJECT BUTTONS
+   THREE BUTTONS
 ===================================================== */
 
-.project-buttons,
-.button-row {
+.project-buttons {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -421,14 +363,7 @@ body {
     margin-top: auto;
 }
 
-
-/* =====================================================
-   ALL BUTTONS
-===================================================== */
-
-.project-buttons .btn,
-.button-row a,
-.case-btn {
+.project-buttons .btn {
     min-height: 44px;
 
     padding: 9px 8px;
@@ -438,7 +373,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -450,17 +384,14 @@ body {
     font-weight: 700;
 
     transition: all 0.3s ease;
-
-    cursor: pointer;
 }
 
 
 /* =====================================================
-   LIVE DEMO
+   LIVE DEMO BUTTON
 ===================================================== */
 
-.btn-live,
-.live-btn {
+.btn-live {
     background: #ff4081;
 
     color: #ffffff;
@@ -468,8 +399,7 @@ body {
     border: 1px solid #ff4081;
 }
 
-.btn-live:hover,
-.live-btn:hover {
+.btn-live:hover {
     background: #ff6699;
 
     border-color: #ff6699;
@@ -479,11 +409,10 @@ body {
 
 
 /* =====================================================
-   GITHUB
+   GITHUB BUTTON
 ===================================================== */
 
-.btn-github,
-.github-btn {
+.btn-github {
     background: transparent;
 
     color: #ff4081;
@@ -491,8 +420,7 @@ body {
     border: 1px solid #ff4081;
 }
 
-.btn-github:hover,
-.github-btn:hover {
+.btn-github:hover {
     background: #ff4081;
 
     color: #ffffff;
@@ -502,11 +430,10 @@ body {
 
 
 /* =====================================================
-   CASE STUDY
+   CASE STUDY BUTTON
 ===================================================== */
 
-.btn-case,
-.case-btn {
+.btn-case {
     background: transparent;
 
     color: #ffffff;
@@ -514,8 +441,7 @@ body {
     border: 1px solid #444444;
 }
 
-.btn-case:hover,
-.case-btn:hover {
+.btn-case:hover {
     background: #ffffff;
 
     color: #111111;
@@ -523,17 +449,6 @@ body {
     border-color: #ffffff;
 
     transform: translateY(-2px);
-}
-
-
-/* =====================================================
-   SLIDER HINT
-===================================================== */
-
-.projects-slider-wrapper {
-    position: relative;
-
-    width: 100%;
 }
 
 
@@ -564,36 +479,16 @@ body {
    TABLET
 ===================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 
-    .nav-container {
-        width: 92%;
-    }
-
-    .nav-links {
-        gap: 25px;
-    }
-
-    .projects-section {
-        padding: 75px 5% 90px;
+    .project-card {
+        flex: 0 0 340px;
+        width: 340px;
+        min-width: 340px;
     }
 
     .projects-heading h1 {
         font-size: 42px;
-    }
-
-    /* Keep cards horizontal */
-
-    .projects-grid {
-        gap: 25px;
-    }
-
-    .project-card {
-        flex: 0 0 340px;
-
-        width: 340px;
-
-        min-width: 340px;
     }
 }
 
@@ -602,14 +497,14 @@ body {
    SMALL TABLET
 ===================================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .nav-container {
-        min-height: 75px;
+        width: 92%;
     }
 
     .nav-links {
-        gap: 18px;
+        gap: 20px;
     }
 
     .nav-links a {
@@ -617,49 +512,17 @@ body {
     }
 
     .projects-section {
-        padding: 65px 20px 80px;
-    }
-
-    .projects-heading {
-        margin-bottom: 40px;
-    }
-
-    .projects-heading h1 {
-        font-size: 36px;
-    }
-
-    .section-description {
-        font-size: 14px;
-    }
-
-    /* Smaller horizontal cards */
-
-    .projects-grid {
-        gap: 20px;
-
-        padding-left: 5px;
-        padding-right: 20px;
+        padding: 70px 5% 90px;
     }
 
     .project-card {
-        flex: 0 0 310px;
-
-        width: 310px;
-
-        min-width: 310px;
+        flex: 0 0 320px;
+        width: 320px;
+        min-width: 320px;
     }
 
-    .project-image,
-    .project-image-placeholder {
-        height: 190px;
-    }
-
-    .project-content {
-        padding: 22px;
-    }
-
-    .project-content h2 {
-        font-size: 22px;
+    .project-buttons {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -668,30 +531,22 @@ body {
    MOBILE
 ===================================================== */
 
-@media (max-width: 500px) {
-
-    .navbar {
-        position: relative;
-    }
+@media (max-width: 650px) {
 
     .nav-container {
-        width: 92%;
-
-        padding: 15px 0;
+        min-height: 75px;
 
         flex-direction: column;
 
         justify-content: center;
 
         gap: 15px;
-    }
 
-    .logo {
-        font-size: 27px;
+        padding: 15px 0;
     }
 
     .nav-links {
-        gap: 14px;
+        gap: 18px;
 
         flex-wrap: wrap;
 
@@ -703,117 +558,76 @@ body {
     }
 
 
-    /* =================================================
-       PROJECT SECTION
-    ================================================= */
-
     .projects-section {
-        padding: 55px 15px 70px;
+        padding: 60px 20px 80px;
     }
 
     .projects-heading {
-        margin-bottom: 35px;
-    }
-
-    .section-label {
-        font-size: 11px;
-
-        letter-spacing: 2px;
+        margin-bottom: 40px;
     }
 
     .projects-heading h1 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .section-description {
-        font-size: 13px;
-
-        line-height: 1.7;
+        font-size: 14px;
     }
 
 
-    /* =================================================
-       HORIZONTAL MOBILE SLIDER
-    ================================================= */
+    /*
+       KEEP THE CARDS HORIZONTAL ON MOBILE TOO.
+       The user can swipe left/right.
+    */
 
     .projects-grid {
-        display: flex;
+        gap: 20px;
 
-        flex-wrap: nowrap;
-
-        overflow-x: auto;
-
-        gap: 18px;
-
-        padding: 8px 5px 25px;
+        padding-bottom: 20px;
 
         scroll-snap-type: x mandatory;
-
-        -webkit-overflow-scrolling: touch;
     }
-
-
-    /* =================================================
-       MOBILE PROJECT CARD
-    ================================================= */
 
     .project-card {
-        flex: 0 0 285px;
+        flex: 0 0 300px;
 
-        width: 285px;
+        width: 300px;
 
-        min-width: 285px;
+        min-width: 300px;
 
         scroll-snap-align: start;
-
-        border-radius: 18px;
     }
 
-    .project-image,
-    .project-image-placeholder {
-        height: 175px;
+
+    .project-image {
+        height: 200px;
     }
 
     .project-content {
-        padding: 20px;
+        padding: 22px;
     }
 
     .project-content h2 {
-        font-size: 20px;
-    }
-
-    .project-type,
-    .project-content h4 {
-        font-size: 13px;
-    }
-
-    .project-description,
-    .project-content p {
-        font-size: 13px;
+        font-size: 22px;
     }
 
 
-    /* =================================================
-       BUTTONS ON MOBILE
-       
-       Still THREE buttons in one row
-    ================================================= */
+    /*
+       Keep all three buttons horizontal.
+    */
 
-    .project-buttons,
-    .button-row {
+    .project-buttons {
         grid-template-columns: repeat(3, 1fr);
 
         gap: 6px;
     }
 
-    .project-buttons .btn,
-    .button-row a,
-    .case-btn {
-        min-height: 42px;
+    .project-buttons .btn {
+        min-height: 44px;
+
+        font-size: 11px;
 
         padding: 8px 5px;
-
-        font-size: 10px;
     }
 }
 
@@ -822,45 +636,39 @@ body {
    VERY SMALL PHONES
 ===================================================== */
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 26px;
+    }
 
     .nav-links {
-        gap: 10px;
+        gap: 12px;
     }
 
     .projects-heading h1 {
-        font-size: 29px;
+        font-size: 30px;
     }
 
     .project-card {
-        flex: 0 0 270px;
+        flex: 0 0 285px;
 
-        width: 270px;
+        width: 285px;
 
-        min-width: 270px;
+        min-width: 285px;
     }
 
-    .project-content {
-        padding: 18px;
+    .project-tags span {
+        font-size: 11px;
+
+        padding: 6px 10px;
     }
 
-    .project-buttons,
-    .button-row {
+    .project-buttons {
         gap: 5px;
     }
 
-    .project-buttons .btn,
-    .button-row a,
-    .case-btn {
-        font-size: 9px;
-
-        padding: 7px 3px;
-    }
-
-    .project-tags span,
-    .tags span {
+    .project-buttons .btn {
         font-size: 10px;
-
-        padding: 6px 9px;
     }
 }
