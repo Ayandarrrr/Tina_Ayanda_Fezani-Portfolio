@@ -3,474 +3,591 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projects | Tina Ayanda Fezani</title>
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-    <div class="logo">
-        Tina<span>.</span>
-    </div>
+    <header class="navbar">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="nav-container">
 
-</header>
+            <a href="index.html" class="logo">
+                Tina<span>.</span>
+            </a>
 
-<section class="page-title">
+            <nav class="nav-links">
 
-    <h1>Featured Projects</h1>
+                <a href="index.html">Home</a>
 
-    <p>
-        A collection of projects that showcase my growth as a Full-Stack Web Developer.
-        Each project represents a milestone in my learning journey.
-    </p>
+                <a href="about.html">About</a>
 
-</section>
+                <a href="projects.html" class="active">Projects</a>
 
-<section class="projects-section">
+                <a href="contact.html">Contact</a>
 
-<div class="projects-slider">
+            </nav>
 
-<!-- AMAZON -->
+        </div>
 
-<div class="project-card">
+    </header>
 
-<div class="project-image">
-<img src="images/amazon-cover.png" alt="Amazon Store">
-</div>
 
-<div class="project-content">
+    <!-- =========================
+         PROJECTS
+    ========================== -->
 
-<h2>Amazon Store</h2>
+    <main>
 
-<h4>React • Context API</h4>
+        <section class="projects-section">
 
-<p>
-A modern e-commerce application currently under development using React,
-Context API and reusable components.
-</p>
+            <div class="projects-container">
 
-<div class="tags">
-<span>React</span>
-<span>Context API</span>
-<span>CSS</span>
-<span>Vite</span>
-</div>
+                <!-- Section heading -->
 
-<div class="button-row">
+                <div class="projects-heading">
 
-<a href="#" class="live-btn">Live Demo</a>
+                    <p class="section-label">
+                        MY WORK
+                    </p>
 
-<a href="#" class="github-btn">GitHub</a>
+                    <h1>
+                        Featured Projects
+                    </h1>
 
-</div>
+                    <p class="section-description">
+                        A collection of projects I've built while developing
+                        my skills in web development, React, JavaScript and
+                        modern web technologies.
+                    </p>
 
-<button class="case-btn">
-View Case Study
-</button>
+                </div>
 
-<div class="case-study">
 
-<h3>Overview</h3>
+                <!-- =========================
+                     PROJECT GRID
+                ========================== -->
 
-<p>
-This project demonstrates modern React development by building an online shopping experience using reusable components and shared state management.
-</p>
+                <div class="projects-grid">
 
-<h3>What I Learned</h3>
 
-<ul>
+                    <!-- =====================
+                         PROJECT 1
+                    ====================== -->
 
-<li>Context API</li>
+                    <article class="project-card">
 
-<li>Component Architecture</li>
+                        <div class="project-image">
 
-<li>State Management</li>
+                            <img
+                                src="images/amazon-store.png"
+                                alt="Amazon Store project screenshot"
+                            >
 
-<li>Responsive Design</li>
+                        </div>
 
-</ul>
 
-</div>
+                        <div class="project-content">
 
-</div>
+                            <h2>
+                                Amazon Store
+                            </h2>
 
-</div>
+                            <p class="project-type">
+                                React • Context API
+                            </p>
 
-<!-- SPORTS -->
+                            <p class="project-description">
+                                A modern e-commerce application currently
+                                under development using React, Context API
+                                and reusable components.
+                            </p>
 
-<div class="project-card">
 
-<div class="project-image">
+                            <!-- Technologies -->
 
-<img src="images/sports-cover.png" alt="Sports Finder">
+                            <div class="project-tags">
 
-</div>
+                                <span>React</span>
 
-<div class="project-content">
+                                <span>Context API</span>
 
-<h2>Sports Team Finder</h2>
+                                <span>CSS</span>
 
-<h4>React • API Integration</h4>
+                                <span>Vite</span>
 
-<p>
+                            </div>
 
-Search for sports teams using live data from TheSportsDB API.
 
-</p>
+                            <!-- Buttons -->
 
-<div class="tags">
+                            <div class="project-buttons">
 
-<span>React</span>
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-<span>API</span>
+                                <a
+                                    href="https://github.com/Ayandarrrr/TinaThreadsStore"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-<span>CSS</span>
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-<span>JavaScript</span>
+                            </div>
 
-</div>
+                        </div>
 
-<div class="button-row">
+                    </article>
 
-<a href="YOUR LIVE DEMO" class="live-btn">
 
-Live Demo
 
-</a>
+                    <!-- =====================
+                         PROJECT 2
+                    ====================== -->
 
-<a href="YOUR GITHUB" class="github-btn">
+                    <article class="project-card">
 
-GitHub
+                        <div class="project-image">
 
-</a>
+                            <img
+                                src="images/sports-team-finder.png"
+                                alt="Sports Team Finder project screenshot"
+                            >
 
-</div>
+                        </div>
 
-<button class="case-btn">
 
-View Case Study
+                        <div class="project-content">
 
-</button>
+                            <h2>
+                                Sports Team Finder
+                            </h2>
 
-<div class="case-study">
+                            <p class="project-type">
+                                React • API Integration
+                            </p>
 
-<h3>The Problem</h3>
+                            <p class="project-description">
+                                A sports search application that retrieves
+                                live sports team information using
+                                TheSportsDB API.
+                            </p>
 
-<p>
 
-Build a search application that retrieves real-time sports data.
+                            <div class="project-tags">
 
-</p>
+                                <span>React</span>
 
-<h3>My Solution</h3>
+                                <span>API</span>
 
-<p>
+                                <span>CSS</span>
 
-Integrated TheSportsDB API using React and displayed dynamic search results.
+                                <span>JavaScript</span>
 
-</p>
+                            </div>
 
-<h3>What I Learned</h3>
 
-<ul>
+                            <div class="project-buttons">
 
-<li>Fetching APIs</li>
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-<li>React Hooks</li>
+                                <a
+                                    href="https://github.com/Ayandarrrr/sports-team-finder"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-<li>State Management</li>
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-<li>Error Handling</li>
+                            </div>
 
-</ul>
+                        </div>
 
-</div>
+                    </article>
 
-</div>
 
-</div>
 
-<!-- GOOGLE KEEP -->
+                    <!-- =====================
+                         PROJECT 3
+                    ====================== -->
 
-<div class="project-card">
+                    <article class="project-card">
 
-<div class="project-image">
+                        <div class="project-image">
 
-<img src="images/googlekeep-cover.png" alt="Google Keep">
+                            <img
+                                src="images/google-keep.png"
+                                alt="Google Keep Clone project screenshot"
+                            >
 
-</div>
+                        </div>
 
-<div class="project-content">
 
-<h2>Google Keep Clone</h2>
+                        <div class="project-content">
 
-<h4>React</h4>
+                            <h2>
+                                Google Keep Clone
+                            </h2>
 
-<p>
+                            <p class="project-type">
+                                React • Productivity
+                            </p>
 
-A notes application inspired by Google Keep built with reusable React components.
+                            <p class="project-description">
+                                A note-taking application inspired by
+                                Google Keep, built using reusable React
+                                components and state management.
+                            </p>
 
-</p>
 
-<div class="tags">
+                            <div class="project-tags">
 
-<span>React</span>
+                                <span>React</span>
 
-<span>JavaScript</span>
+                                <span>JavaScript</span>
 
-<span>CSS</span>
+                                <span>CSS</span>
 
-</div>
+                                <span>Vite</span>
 
-<div class="button-row">
+                            </div>
 
-<a href="YOUR LIVE DEMO" class="live-btn">
 
-Live Demo
+                            <div class="project-buttons">
 
-</a>
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-<a href="YOUR GITHUB" class="github-btn">
+                                <a
+                                    href="https://github.com/Ayandarrrr/google-keep-clone-0.2"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-GitHub
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-</a>
+                            </div>
 
-</div>
+                        </div>
 
-<button class="case-btn">
+                    </article>
 
-View Case Study
 
-</button>
 
-<div class="case-study">
+                    <!-- =====================
+                         PROJECT 4
+                    ====================== -->
 
-<h3>Overview</h3>
+                    <article class="project-card">
 
-<p>
+                        <div class="project-image">
 
-Developed a note-taking application focusing on reusable components and state management.
+                            <img
+                                src="images/todo-list.png"
+                                alt="To-Do List project screenshot"
+                            >
 
-</p>
+                        </div>
 
-<h3>What I Learned</h3>
 
-<ul>
+                        <div class="project-content">
 
-<li>React Components</li>
+                            <h2>
+                                To-Do List
+                            </h2>
 
-<li>State</li>
+                            <p class="project-type">
+                                JavaScript • Local Storage
+                            </p>
 
-<li>Props</li>
+                            <p class="project-description">
+                                A task management application built with
+                                HTML, CSS and JavaScript using Local Storage
+                                to save tasks.
+                            </p>
 
-<li>Event Handling</li>
 
-</ul>
+                            <div class="project-tags">
 
-</div>
+                                <span>HTML</span>
 
-</div>
+                                <span>CSS</span>
 
-</div>
+                                <span>JavaScript</span>
 
-<!-- TODO -->
+                                <span>Local Storage</span>
 
-<div class="project-card">
+                            </div>
 
-<div class="project-image">
 
-<img src="images/todo-cover.png" alt="To Do">
+                            <div class="project-buttons">
 
-</div>
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-<div class="project-content">
+                                <a
+                                    href="#"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-<h2>To-Do List</h2>
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-<h4>JavaScript</h4>
+                            </div>
 
-<p>
+                        </div>
 
-A task management application using Local Storage.
+                    </article>
 
-</p>
 
-<div class="tags">
 
-<span>HTML</span>
+                    <!-- =====================
+                         PROJECT 5
+                    ====================== -->
 
-<span>CSS</span>
+                    <article class="project-card">
 
-<span>JavaScript</span>
+                        <div class="project-image">
 
-</div>
+                            <img
+                                src="images/youtube-clone.png"
+                                alt="YouTube Clone project screenshot"
+                            >
 
-<div class="button-row">
+                        </div>
 
-<a href="#">Live Demo</a>
 
-<a href="#">GitHub</a>
+                        <div class="project-content">
 
-</div>
+                            <h2>
+                                YouTube Clone
+                            </h2>
 
-<button class="case-btn">View Case Study</button>
+                            <p class="project-type">
+                                HTML • CSS • JavaScript
+                            </p>
 
-<div class="case-study">
+                            <p class="project-description">
+                                A YouTube-inspired interface created to
+                                practise responsive layouts, navigation
+                                and frontend development.
+                            </p>
 
-<p>
 
-Built a CRUD application that stores tasks using browser Local Storage.
+                            <div class="project-tags">
 
-</p>
+                                <span>HTML</span>
 
-</div>
+                                <span>CSS</span>
 
-</div>
+                                <span>JavaScript</span>
 
-</div>
+                                <span>Responsive Design</span>
 
-<!-- TESLA -->
+                            </div>
 
-<div class="project-card">
 
-<div class="project-image">
+                            <div class="project-buttons">
 
-<img src="images/tesla-cover.png">
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-</div>
+                                <a
+                                    href="#"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-<div class="project-content">
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-<h2>Tesla Landing Page</h2>
+                            </div>
 
-<h4>Responsive Design</h4>
+                        </div>
 
-<p>
+                    </article>
 
-Responsive landing page inspired by Tesla.
 
-</p>
 
-<div class="tags">
+                    <!-- =====================
+                         PROJECT 6
+                    ====================== -->
 
-<span>HTML</span>
+                    <article class="project-card">
 
-<span>CSS</span>
+                        <div class="project-image">
 
-</div>
+                            <img
+                                src="images/twitter-clone.png"
+                                alt="Twitter Clone project screenshot"
+                            >
 
-<div class="button-row">
+                        </div>
 
-<a href="#">Live Demo</a>
 
-<a href="#">GitHub</a>
+                        <div class="project-content">
 
-</div>
+                            <h2>
+                                Twitter Clone
+                            </h2>
 
-<button class="case-btn">
+                            <p class="project-type">
+                                HTML • CSS • Bootstrap
+                            </p>
 
-View Case Study
+                            <p class="project-description">
+                                A responsive social media interface created
+                                to practise Bootstrap layouts, reusable
+                                components and responsive design.
+                            </p>
 
-</button>
 
-<div class="case-study">
+                            <div class="project-tags">
 
-<p>
+                                <span>HTML</span>
 
-Focused on responsive layouts and clean UI design.
+                                <span>CSS</span>
 
-</p>
+                                <span>Bootstrap</span>
 
-</div>
+                                <span>Responsive Design</span>
 
-</div>
+                            </div>
 
-</div>
 
-<!-- NETFLIX -->
+                            <div class="project-buttons">
 
-<div class="project-card">
+                                <a
+                                    href="#"
+                                    class="btn btn-live"
+                                    target="_blank"
+                                >
+                                    Live Demo
+                                </a>
 
-<div class="project-image">
+                                <a
+                                    href="#"
+                                    class="btn btn-github"
+                                    target="_blank"
+                                >
+                                    GitHub Repo
+                                </a>
 
-<img src="images/netflix-cover.png">
+                                <a
+                                    href="#"
+                                    class="btn btn-case"
+                                >
+                                    Case Study →
+                                </a>
 
-</div>
+                            </div>
 
-<div class="project-content">
+                        </div>
 
-<h2>Netflix Landing Page</h2>
+                    </article>
 
-<h4>Responsive UI</h4>
 
-<p>
+                </div>
 
-A Netflix-inspired landing page built using HTML and CSS.
+            </div>
 
-</p>
+        </section>
 
-<div class="tags">
+    </main>
 
-<span>HTML</span>
 
-<span>CSS</span>
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-</div>
+    <footer class="footer">
 
-<div class="button-row">
+        <p>
+            © 2026 Tina Ayanda Fezani. All rights reserved.
+        </p>
 
-<a href="#">Live Demo</a>
+    </footer>
 
-<a href="#">GitHub</a>
-
-</div>
-
-<button class="case-btn">
-
-View Case Study
-
-</button>
-
-<div class="case-study">
-
-<p>
-
-Strengthened my understanding of responsive design and layout techniques.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
 
 </body>
 
