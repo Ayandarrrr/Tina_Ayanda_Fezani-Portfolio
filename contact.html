@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
@@ -36,19 +39,19 @@
 <section class="contact-container">
 
     <a href="mailto:fezaniayanda@gmail.com" class="contact-card slide-up">
-        <span class="contact-icon">📧</span>
+        <div class="contact-icon-wrap"><i data-lucide="mail"></i></div>
         <h2>Email</h2>
         <p>fezaniayanda@gmail.com</p>
     </a>
 
     <a href="tel:+27674174314" class="contact-card slide-up">
-        <span class="contact-icon">📞</span>
+        <div class="contact-icon-wrap"><i data-lucide="phone"></i></div>
         <h2>Phone</h2>
         <p>+27 67 417 4314</p>
     </a>
 
     <div class="contact-card slide-up">
-        <span class="contact-icon">📍</span>
+        <div class="contact-icon-wrap"><i data-lucide="map-pin"></i></div>
         <h2>Location</h2>
         <p>Johannesburg, South Africa</p>
     </div>
@@ -61,14 +64,17 @@
     <div class="social-buttons">
 
         <a href="https://github.com/Ayandarrrr" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="github" class="social-btn-icon"></i>
             GitHub
         </a>
 
         <a href="https://www.linkedin.com/in/tina-ayanda-fezani-4b23b7271/" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="linkedin" class="social-btn-icon"></i>
             LinkedIn
         </a>
 
         <a href="assets/Tina_Ayanda_Fezani_CV_pdf.pdf" class="social-btn" target="_blank" rel="noopener noreferrer" download>
+            <i data-lucide="download" class="social-btn-icon"></i>
             Download CV
         </a>
 
@@ -77,9 +83,10 @@
 
 
 <footer>
-    <p>Designed &amp; Developed by Tina Ayanda Fezani © 2026</p>
+    <p>Designed &amp; Developed by Tina Ayanda Fezani &copy; 2026</p>
 </footer>
 
 <script src="js/script.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
