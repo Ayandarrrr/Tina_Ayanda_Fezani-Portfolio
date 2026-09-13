@@ -1022,3 +1022,326 @@ footer {
     .page-title { padding: 120px 5% 50px; }
     .page-title h1 { font-size: 2.2rem; }
 }
+
+
+/* =====================================================
+   LUCIDE ICON SIZES — shared across all pages
+===================================================== */
+
+[data-lucide] {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.8;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.what-icon-wrap [data-lucide] {
+    width: 28px;
+    height: 28px;
+    stroke: var(--pink);
+}
+
+.about-card-icon [data-lucide] {
+    width: 26px;
+    height: 26px;
+    stroke: var(--pink);
+}
+
+.quote-icon {
+    width: 40px !important;
+    height: 40px !important;
+    stroke: var(--pink) !important;
+    opacity: 0.5;
+    margin-bottom: 18px;
+}
+
+.featured-proj-icon {
+    width: 52px !important;
+    height: 52px !important;
+    stroke: rgba(255,79,139,0.8) !important;
+    filter: drop-shadow(0 0 12px rgba(255,79,139,0.4));
+}
+
+
+/* =====================================================
+   ABOUT CARD ICON
+===================================================== */
+
+.about-card-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255,79,139,0.1);
+    border: 1px solid rgba(255,79,139,0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   HERO ACTIONS & SOCIAL ROW
+===================================================== */
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 13px 26px;
+    border: 1px solid var(--border);
+    color: var(--grey);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: .9rem;
+    transition: border-color .3s, color .3s;
+}
+
+.outline-btn:hover {
+    border-color: var(--pink);
+    color: var(--white);
+}
+
+.hero-socials {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.hero-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    color: var(--grey);
+    transition: border-color .3s, color .3s, background .3s;
+}
+
+.hero-socials a:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+    background: rgba(255,79,139,0.06);
+}
+
+.hero-socials [data-lucide] {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =====================================================
+   HERO IMAGE WRAPPER
+===================================================== */
+
+.hero-img-wrap {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--pink);
+    box-shadow: 0 0 0 8px rgba(255,79,139,0.07),
+                0 0 60px rgba(255,79,139,0.2);
+    animation: pulseGlow 3.5s ease-in-out infinite;
+}
+
+.hero-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   STATS ROW
+===================================================== */
+
+.stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 50px 8%;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 0 80px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: var(--pink);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: .82rem;
+    color: var(--grey);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 50px;
+    background: var(--border);
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+
+/* =====================================================
+   WHAT I DO — updated icon wrapper
+===================================================== */
+
+.what-icon-wrap {
+    width: 52px;
+    height: 52px;
+    background: rgba(255,79,139,0.08);
+    border: 1px solid rgba(255,79,139,0.18);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    transition: background .3s, border-color .3s;
+}
+
+.what-card:hover .what-icon-wrap {
+    background: rgba(255,79,139,0.15);
+    border-color: rgba(255,79,139,0.4);
+}
+
+
+/* =====================================================
+   FEATURED CARD — image inner label
+===================================================== */
+
+.featured-img-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.featured-img-inner span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: .85;
+    letter-spacing: .5px;
+}
+
+.featured-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.featured-actions .primary-btn,
+.featured-actions .secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* =====================================================
+   CTA BANNER
+===================================================== */
+
+.cta-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 60px;
+    margin: 0 8% 100px;
+    background: linear-gradient(135deg, #1e0d18 0%, #181818 100%);
+    border: 1px solid rgba(255,79,139,0.25);
+    border-radius: 24px;
+}
+
+.cta-content h2 {
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8px;
+}
+
+.cta-content p {
+    color: var(--grey);
+    font-size: .95rem;
+}
+
+.cta-banner .primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   QUOTE SECTION — icon
+===================================================== */
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =====================================================
+   RESPONSIVE — new index sections
+===================================================== */
+
+@media (max-width: 1100px) {
+    .cta-banner { padding: 40px; margin: 0 5% 80px; }
+}
+
+@media (max-width: 900px) {
+    .hero-img-wrap { width: 260px; height: 260px; }
+    .stats-row { flex-wrap: wrap; gap: 30px; }
+    .stat-divider { display: none; }
+    .cta-banner { flex-direction: column; text-align: center; padding: 36px 28px; margin: 0 5% 80px; }
+}
+
+@media (max-width: 600px) {
+    .hero-actions { gap: 10px; }
+    .outline-btn  { padding: 11px 18px; font-size: .85rem; }
+    .stat-number  { font-size: 2.2rem; }
+    .cta-banner   { padding: 30px 22px; border-radius: 16px; }
+    .cta-content h2 { font-size: 1.4rem; }
+}

@@ -1324,3 +1324,74 @@ body {
         gap: 16px;
     }
 }
+
+
+/* =====================================================
+   LUCIDE ICONS — projects & contact pages
+===================================================== */
+
+[data-lucide] {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.8;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+/* Project card image icon */
+.proj-lucide-icon {
+    width: 44px !important;
+    height: 44px !important;
+    stroke: rgba(255,64,129,0.85) !important;
+    filter: drop-shadow(0 0 10px rgba(255,64,129,0.4));
+    margin-bottom: 4px;
+}
+
+/* Buttons with icons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn [data-lucide] {
+    width: 14px;
+    height: 14px;
+}
+
+/* Case study modal icons */
+.cs-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px;
+    stroke: var(--pink, #ff4081) !important;
+    vertical-align: middle;
+}
+
+.case-study-item h3 {
+    display: flex;
+    align-items: center;
+}
+
+/* Close button icon */
+.case-study-close [data-lucide] {
+    width: 22px;
+    height: 22px;
+}
+
+/* Project image label — no emojis, icon only */
+.proj-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.proj-img-label span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+}
