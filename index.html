@@ -11,14 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
     <header class="navbar">
         <div class="logo">Tina<span>.</span></div>
         <nav>
@@ -32,53 +34,71 @@
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
-
     <main>
 
+        <!-- =====================================================
+             HERO
+        ===================================================== -->
         <section class="hero">
 
             <div class="hero-content">
 
-                <p class="subtitle fade-in-delay-1">FULL STACK DEVELOPER · SOUTH AFRICA</p>
+                <p class="subtitle fade-in-delay-1">FULL STACK DEVELOPER &nbsp;·&nbsp; SOUTH AFRICA</p>
 
                 <h1 class="fade-in-delay-2">
-                    Building thoughtful digital experiences with clean code and purpose.
+                    Building thoughtful<br>
+                    digital experiences<br>
+                    with clean code.
                 </h1>
 
                 <p class="description fade-in-delay-3">
-                    Hi, I'm <strong>Tina Ayanda Fezani</strong> — a junior full-stack developer
-                    who turns ideas into responsive, accessible web experiences.
-                    I'm actively seeking an internship or junior developer role
-                    where I can grow, contribute, and keep building.
+                    Hi, I'm <strong>Tina Ayanda Fezani</strong> — a junior full-stack
+                    developer who turns ideas into responsive, accessible web experiences.
+                    I'm actively seeking an internship or junior developer role where I can
+                    grow, contribute, and keep building.
                 </p>
 
-                <div class="buttons fade-in-delay-4">
+                <div class="hero-actions fade-in-delay-4">
                     <a href="projects.html" class="primary-btn">View My Work</a>
                     <a href="contact.html" class="secondary-btn">Let's Connect</a>
-                    <a href="assets/Tina_Ayanda_Fezani_CV_pdf.pdf" class="secondary-btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+                    <a href="assets/Tina_Ayanda_Fezani_CV_pdf.pdf" class="outline-btn" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="download" class="btn-icon"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <!-- Social row -->
+                <div class="hero-socials fade-in-delay-4">
+                    <a href="https://github.com/Ayandarrrr" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tina-ayanda-fezani-4b23b7271/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:fezaniayanda@gmail.com" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
                 </div>
 
             </div>
 
-            <div class="hero-image">
-                <img src="assets/Subject.png" alt="Tina Ayanda Fezani" class="hero-profile-img fade-in-delay-2">
+            <div class="hero-image fade-in-delay-2">
+                <div class="hero-img-wrap">
+                    <img src="assets/Subject.png" alt="Tina Ayanda Fezani">
+                </div>
             </div>
 
         </section>
 
 
-        <!-- =========================
+        <!-- =====================================================
              SKILLS STRIP
-        ========================== -->
-
-        <section class="skills-strip slide-in">
+        ===================================================== -->
+        <section class="skills-strip">
             <p class="section-label">TECH STACK</p>
             <div class="skills-row">
-                <span>HTML</span>
-                <span>CSS</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
                 <span>JavaScript</span>
                 <span>React</span>
                 <span>Git</span>
@@ -91,39 +111,47 @@
         </section>
 
 
-        <!-- =========================
+        <!-- =====================================================
              WHAT I DO
-        ========================== -->
-
+        ===================================================== -->
         <section class="what-i-do">
 
             <div class="section-heading fade-in">
                 <p class="section-label">WHAT I DO</p>
                 <h2>How I Build</h2>
+                <p>I combine clean design with practical functionality — building experiences that work for real people.</p>
             </div>
 
             <div class="what-grid">
 
                 <div class="what-card slide-up">
-                    <span class="what-icon">🎨</span>
+                    <div class="what-icon-wrap">
+                        <i data-lucide="layout-template"></i>
+                    </div>
                     <h3>UI Development</h3>
                     <p>Clean, responsive interfaces using HTML, CSS, and JavaScript — built to look great on every screen.</p>
                 </div>
 
                 <div class="what-card slide-up">
-                    <span class="what-icon">⚛️</span>
+                    <div class="what-icon-wrap">
+                        <i data-lucide="atom"></i>
+                    </div>
                     <h3>React Apps</h3>
                     <p>Component-based apps with state management, API integration, and reusable design patterns.</p>
                 </div>
 
                 <div class="what-card slide-up">
-                    <span class="what-icon">📱</span>
+                    <div class="what-icon-wrap">
+                        <i data-lucide="smartphone"></i>
+                    </div>
                     <h3>Mobile-First Design</h3>
                     <p>Every project starts from the smallest screen up — ensuring a great experience across all devices.</p>
                 </div>
 
                 <div class="what-card slide-up">
-                    <span class="what-icon">🤝</span>
+                    <div class="what-icon-wrap">
+                        <i data-lucide="users"></i>
+                    </div>
                     <h3>Client Work</h3>
                     <p>Delivered real websites for real clients — from requirements gathering to a live, branded product.</p>
                 </div>
@@ -133,10 +161,35 @@
         </section>
 
 
-        <!-- =========================
-             FEATURED PROJECT
-        ========================== -->
+        <!-- =====================================================
+             STATS ROW
+        ===================================================== -->
+        <section class="stats-row slide-up">
+            <div class="stat-item">
+                <span class="stat-number">11</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Real Client Sites</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Team Collaborations</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+        </section>
 
+
+        <!-- =====================================================
+             FEATURED PROJECT
+        ===================================================== -->
         <section class="featured-project">
 
             <div class="section-heading fade-in">
@@ -147,25 +200,32 @@
             <div class="featured-card slide-up">
 
                 <div class="featured-img proj-logistix">
-                    <div class="proj-img-label">
-                        <span class="proj-icon">🚚</span>
+                    <div class="featured-img-inner">
+                        <i data-lucide="truck" class="featured-proj-icon"></i>
                         <span>Mvuleni Logistix</span>
                     </div>
                 </div>
 
                 <div class="featured-info">
-                    <p class="proj-pill pill-personal" style="margin-bottom:14px;">Client Work</p>
+                    <span class="proj-pill pill-personal">Client Work</span>
                     <h3>Mvuleni Logistix</h3>
                     <p>
-                        A professional website built for a real logistics client from scratch —
-                        from requirements session to Figma wireframes to a live, fully responsive site.
-                        This project showed me what it means to build for someone else, not just for practice.
+                        A professional website built for a real logistics client — from requirements
+                        session to Figma wireframes to a fully responsive live site. This project
+                        showed me what it means to build for someone else, not just for practice.
                     </p>
-                    <div class="project-tags" style="margin: 18px 0;">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Client Project</span>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Figma</span>
+                        <span>Client Project</span>
                     </div>
-                    <div class="buttons">
-                        <a href="https://ayandarrrr.github.io/mvuleni-logistix-website/" class="primary-btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <div class="featured-actions">
+                        <a href="https://ayandarrrr.github.io/mvuleni-logistix-website/" class="primary-btn" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="external-link" class="btn-icon"></i>
+                            Live Demo
+                        </a>
                         <a href="projects.html" class="secondary-btn">All Projects</a>
                     </div>
                 </div>
@@ -174,18 +234,33 @@
 
         </section>
 
+
+        <!-- =====================================================
+             CTA BANNER
+        ===================================================== -->
+        <section class="cta-banner slide-up">
+            <div class="cta-content">
+                <h2>Open to opportunities</h2>
+                <p>Looking for an internship or junior developer role in South Africa or remotely.</p>
+            </div>
+            <a href="contact.html" class="primary-btn">
+                <i data-lucide="send" class="btn-icon"></i>
+                Get In Touch
+            </a>
+        </section>
+
     </main>
 
 
-    <!-- =========================
+    <!-- =====================================================
          FOOTER
-    ========================== -->
-
+    ===================================================== -->
     <footer>
-        <p>Designed &amp; Developed by Tina Ayanda Fezani © 2026</p>
+        <p>Designed &amp; Developed by Tina Ayanda Fezani &copy; 2026</p>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>lucide.createIcons();</script>
 
 </body>
 </html>
