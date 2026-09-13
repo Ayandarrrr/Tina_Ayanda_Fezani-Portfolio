@@ -1197,3 +1197,62 @@ body {
     .cat-title { font-size: 22px; }
     .project-image { height: 175px; }
 }
+
+
+/* =====================================================
+   LUCIDE ICONS — PROJECT CARDS
+===================================================== */
+
+/* Large icon inside project image placeholder */
+.proj-lucide-icon {
+    width: 52px;
+    height: 52px;
+    color: #ff4081;
+    stroke-width: 1.5;
+    filter: drop-shadow(0 0 12px rgba(255, 64, 129, 0.5));
+    display: block;
+}
+
+.proj-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.proj-img-label span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+}
+
+/* Icons inside buttons */
+.btn i,
+.project-buttons i {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    stroke-width: 2;
+}
+
+/* Case study modal icons */
+.cs-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    color: #ff4081;
+    stroke-width: 2;
+}
+
+.case-study-item h3 {
+    display: flex;
+    align-items: center;
+}
