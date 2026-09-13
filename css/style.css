@@ -2293,3 +2293,39 @@ footer{
     .project-buttons { flex-direction: column; }
     .btn { justify-content: center; }
 }
+
+
+/* =====================================================
+   HOMEPAGE SOCIAL ICON IMAGES (Flaticon PNGs)
+===================================================== */
+
+.social-icon-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    /* Invert to white so they match the dark theme */
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.hero-socials a:hover .social-icon-img {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+/* Make the mail Lucide icon the same size as the PNG icons */
+.hero-socials a i[data-lucide="mail"] {
+    width: 26px;
+    height: 26px;
+}
+
+/* =====================================================
+   PROJECT BUTTON LUCIDE ICONS — keep inline
+===================================================== */
+
+.project-buttons .btn svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+}
