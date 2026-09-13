@@ -744,3 +744,295 @@ footer{
     border-top: 1px solid var(--border);
     color: var(--grey);
 }
+
+
+/* =====================================================
+   HERO — PROFILE IMAGE
+===================================================== */
+
+.hero-profile-img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--pink);
+    box-shadow: 0 0 40px rgba(255,79,139,0.25);
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 30px rgba(255,79,139,0.2); }
+    50%       { box-shadow: 0 0 55px rgba(255,79,139,0.45); }
+}
+
+/* Staggered fade-in delays for hero content */
+.fade-in-delay-1 { animation: fadeInUp 0.6s ease 0.1s both; }
+.fade-in-delay-2 { animation: fadeInUp 0.6s ease 0.25s both; }
+.fade-in-delay-3 { animation: fadeInUp 0.6s ease 0.4s both; }
+.fade-in-delay-4 { animation: fadeInUp 0.6s ease 0.55s both; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: fadeInUp 0.7s ease 0.3s both;
+}
+
+/* Slide-up (scroll-triggered) */
+.slide-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease both;
+}
+
+
+/* =====================================================
+   SKILLS STRIP
+===================================================== */
+
+.skills-strip {
+    padding: 40px 8%;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.skills-strip .section-label {
+    color: var(--pink);
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills-row span {
+    background: #181818;
+    border: 1px solid var(--border);
+    color: var(--white);
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: .88rem;
+    font-weight: 500;
+    transition: border-color .3s, color .3s;
+}
+
+.skills-row span:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+
+/* =====================================================
+   WHAT I DO
+===================================================== */
+
+.what-i-do {
+    padding: 80px 8%;
+}
+
+.what-i-do .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.what-i-do .section-heading h2 {
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.what-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.what-card {
+    background: #181818;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 26px;
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+
+.what-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 12px 30px rgba(255,79,139,0.15);
+}
+
+.what-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.what-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.what-card p {
+    color: var(--grey);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FEATURED PROJECT CARD
+===================================================== */
+
+.featured-project {
+    padding: 0 8% 100px;
+}
+
+.featured-project .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-project .section-heading h2 {
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: #181818;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+.featured-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 15px 40px rgba(255,79,139,0.15);
+}
+
+.featured-img {
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-info {
+    padding: 40px 40px 40px 0;
+}
+
+.featured-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featured-info p {
+    color: var(--grey);
+    line-height: 1.8;
+    font-size: .95rem;
+}
+
+/* Pills (shared with projects page) */
+.proj-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pill-personal {
+    background: rgba(72,199,142,0.1);
+    color: #48c78e;
+    border: 1px solid rgba(72,199,142,0.25);
+}
+
+/* Project tags (shared) */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    background: #242424;
+    border: 1px solid var(--border);
+    color: var(--white);
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: .82rem;
+}
+
+/* Image placeholder classes (same as style.css) */
+.proj-logistix {
+    background: radial-gradient(ellipse at 40% 50%, #0d2e1a 0%, #0d0d0d 70%);
+    box-shadow: inset 0 0 60px rgba(72,199,142,0.08);
+}
+
+.proj-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.proj-icon { font-size: 2.4rem; filter: drop-shadow(0 0 8px rgba(255,64,129,0.6)); }
+
+.proj-img-label span:last-child {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+
+/* =====================================================
+   RESPONSIVE — INDEX
+===================================================== */
+
+@media (max-width: 1100px) {
+    .what-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+    .hero { flex-direction: column; padding-top: 140px; text-align: center; }
+    .hero h1 { font-size: 2.4rem; }
+    .buttons { justify-content: center; flex-wrap: wrap; }
+    .hero-profile-img { width: 240px; height: 240px; }
+    .featured-card { grid-template-columns: 1fr; }
+    .featured-img { height: 220px; }
+    .featured-info { padding: 30px; }
+}
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 1.9rem; }
+    .what-grid { grid-template-columns: 1fr; }
+    .what-i-do { padding: 60px 5%; }
+    .featured-project { padding: 0 5% 80px; }
+}
