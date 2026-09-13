@@ -977,3 +977,222 @@ body {
     }
 
 }
+
+
+/* =====================================================
+   PROJECTS GRID (2-col, collapses on mobile)
+===================================================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   CATEGORY HEADERS
+===================================================== */
+
+.category-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 60px auto 36px;
+}
+
+.cat-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 12px 0 10px;
+}
+
+.cat-desc {
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Category Pills */
+.cat-pill {
+    display: inline-block;
+    padding: 5px 16px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cat-clone   { background: rgba(64,180,255,0.12); color: #40b4ff; border: 1px solid rgba(64,180,255,0.3); }
+.cat-personal{ background: rgba(72,199,142,0.12); color: #48c78e; border: 1px solid rgba(72,199,142,0.3); }
+.cat-collab  { background: rgba(167,119,255,0.12);color: #a777ff; border: 1px solid rgba(167,119,255,0.3);}
+
+/* Card-level pills */
+.proj-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pill-clone   { background: rgba(64,180,255,0.1);  color: #40b4ff; border: 1px solid rgba(64,180,255,0.25); }
+.pill-personal{ background: rgba(72,199,142,0.1);  color: #48c78e; border: 1px solid rgba(72,199,142,0.25); }
+.pill-collab  { background: rgba(167,119,255,0.1); color: #a777ff; border: 1px solid rgba(167,119,255,0.25);}
+
+
+/* =====================================================
+   PROJECT IMAGE — COLOUR-SCHEME PLACEHOLDERS
+   All use your dark #0d0d0d + #ff4081 palette as base,
+   each with a unique accent glow so they feel distinct
+   but cohesive.
+===================================================== */
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Default fallback */
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Shared label overlay */
+.proj-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.proj-icon {
+    font-size: 2.4rem;
+    line-height: 1;
+    filter: drop-shadow(0 0 8px rgba(255,64,129,0.6));
+}
+
+.proj-img-label span:last-child {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
+/* Individual card gradients — all dark, all pink-tinted,
+   each with a subtle different hue for variety */
+
+.proj-twitter  { background: radial-gradient(ellipse at 30% 40%, #1a0d2e 0%, #0d0d0d 70%), linear-gradient(135deg, #110820, #0d0d0d); box-shadow: inset 0 0 60px rgba(64,180,255,0.08); }
+.proj-store    { background: radial-gradient(ellipse at 70% 30%, #2e0d1a 0%, #0d0d0d 70%), linear-gradient(135deg, #1e0810, #0d0d0d); box-shadow: inset 0 0 60px rgba(255,64,129,0.10); }
+.proj-youtube  { background: radial-gradient(ellipse at 30% 60%, #2e1a0d 0%, #0d0d0d 70%), linear-gradient(135deg, #1e1008, #0d0d0d); box-shadow: inset 0 0 60px rgba(255,120,64,0.08); }
+.proj-netflix  { background: radial-gradient(ellipse at 60% 40%, #2e0d0d 0%, #0d0d0d 70%), linear-gradient(135deg, #1e0808, #0d0d0d); box-shadow: inset 0 0 60px rgba(220,40,40,0.08); }
+.proj-logistix { background: radial-gradient(ellipse at 40% 50%, #0d2e1a 0%, #0d0d0d 70%), linear-gradient(135deg, #081e10, #0d0d0d); box-shadow: inset 0 0 60px rgba(72,199,142,0.08); }
+.proj-tutors   { background: radial-gradient(ellipse at 65% 35%, #1a0d2e 0%, #0d0d0d 70%), linear-gradient(135deg, #100820, #0d0d0d); box-shadow: inset 0 0 60px rgba(167,119,255,0.08); }
+.proj-keep     { background: radial-gradient(ellipse at 35% 55%, #2e2a0d 0%, #0d0d0d 70%), linear-gradient(135deg, #1e1c08, #0d0d0d); box-shadow: inset 0 0 60px rgba(255,200,64,0.07); }
+.proj-todo     { background: radial-gradient(ellipse at 55% 45%, #0d1a2e 0%, #0d0d0d 70%), linear-gradient(135deg, #08101e, #0d0d0d); box-shadow: inset 0 0 60px rgba(64,130,255,0.08); }
+.proj-sports   { background: radial-gradient(ellipse at 40% 40%, #0d2e0d 0%, #0d0d0d 70%), linear-gradient(135deg, #08180a, #0d0d0d); box-shadow: inset 0 0 60px rgba(64,200,80,0.08); }
+.proj-404      { background: radial-gradient(ellipse at 60% 50%, #2e0d1a 0%, #0d0d0d 70%), linear-gradient(135deg, #1e0812, #0d0d0d); box-shadow: inset 0 0 60px rgba(255,64,129,0.12); }
+.proj-ihub     { background: radial-gradient(ellipse at 45% 40%, #0d1a2e 0%, #0d0d0d 70%), linear-gradient(135deg, #080e1e, #0d0d0d); box-shadow: inset 0 0 60px rgba(100,150,255,0.08); }
+
+/* Pink accent line at top of each image */
+.project-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff4081, transparent);
+    opacity: 0.6;
+}
+
+
+/* =====================================================
+   KEYFRAME ANIMATIONS
+===================================================== */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-12px); }
+    to   { opacity: 1; transform: translateY(0);     }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0);     }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(255,64,129,0.2); }
+    50%       { box-shadow: 0 0 40px rgba(255,64,129,0.45); }
+}
+
+/* Fade-in utility (runs once on load) */
+.fade-in {
+    animation: fadeIn 0.7s ease forwards;
+}
+
+/* Slide-up — set by IntersectionObserver in script.js */
+.slide-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger siblings */
+.projects-grid .project-card:nth-child(1),
+.projects-grid .project-card:nth-child(odd)  { transition-delay: 0s;    }
+.projects-grid .project-card:nth-child(2),
+.projects-grid .project-card:nth-child(even) { transition-delay: 0.12s; }
+
+
+/* =====================================================
+   RESPONSIVE — PROJECTS GRID
+===================================================== */
+
+@media (max-width: 900px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .cat-title { font-size: 26px; }
+}
+
+@media (max-width: 600px) {
+    .category-header { margin: 48px auto 28px; }
+    .cat-title { font-size: 22px; }
+    .project-image { height: 175px; }
+}
