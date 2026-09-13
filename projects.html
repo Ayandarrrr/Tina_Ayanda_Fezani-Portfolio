@@ -44,435 +44,456 @@
                 <h1>Featured Projects</h1>
                 <p class="section-description">
                     A collection of work that shows how I think, design, and build —
-                    from real client sites, to team collaborations, to clones that
-                    sharpened my fundamentals.
+                    from clones that sharpened my fundamentals, to real client sites,
+                    to team collaborations.
                 </p>
             </div>
 
 
             <!-- ==================================================
-                 1. PERSONAL & CLIENT
+                 SECTION 1: UI CLONES
             =================================================== -->
             <div class="category-header slide-up">
-                <span class="cat-number">01</span>
-                <div class="cat-header-text">
-                    <span class="cat-pill cat-personal">Personal &amp; Client</span>
-                    <h2 class="cat-title">Built for Real People</h2>
-                    <p class="cat-desc">Planned, designed, and delivered independently — some for real clients.</p>
-                </div>
+                <span class="cat-pill cat-clone">UI Clones</span>
+                <h2 class="cat-title">Learning by Rebuilding</h2>
+                <p class="cat-desc">Built from scratch by studying real products — no templates, no shortcuts.</p>
             </div>
 
-            <div class="projects-slider">
+            <div class="slider-wrap">
+                <button class="slider-btn slider-prev" onclick="slide('clones', -1)" aria-label="Previous">
+                    <i data-lucide="chevron-left"></i>
+                </button>
 
-                <!-- Mvuleni Logistix -->
-                <article class="project-card">
-                    <div class="project-image proj-logistix">
-                        <div class="proj-img-label">
-                            <i data-lucide="truck" class="proj-lucide-icon"></i>
-                            <span>Mvuleni Logistix</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-personal">Client Work</p>
-                        <h2>Mvuleni Logistix</h2>
-                        <p class="project-type">HTML · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A professional business website built for a real
-                            logistics client — hero, services, about and contact,
-                            fully responsive.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Client</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/mvuleni-logistix-website/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/mvuleni-logistix-website" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('logistix')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                <div class="projects-slider" id="clones">
 
-                <!-- Tina Tutors -->
-                <article class="project-card">
-                    <div class="project-image proj-tutors">
-                        <div class="proj-img-label">
-                            <i data-lucide="graduation-cap" class="proj-lucide-icon"></i>
-                            <span>Tina Tutors</span>
+                    <!-- Twitter / X Login -->
+                    <article class="project-card">
+                        <div class="project-image proj-twitter">
+                            <div class="proj-img-label">
+                                <i data-lucide="twitter" class="proj-lucide-icon"></i>
+                                <span>Twitter / X Login</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-personal">Personal Project</p>
-                        <h2>Tina Tutors</h2>
-                        <p class="project-type">HTML · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A tutoring service website I designed and built for
-                            myself — subject listings, booking info, and a
-                            contact form, built mobile-first.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Mobile-First</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-clone">Clone</p>
+                            <h2>Twitter / X Login Page</h2>
+                            <p class="project-type">HTML · CSS · Responsive Design</p>
+                            <p class="project-description">
+                                A pixel-accurate recreation of the Twitter/X login page.
+                                Practised form styling, centred layouts, and responsive
+                                design — no frameworks used.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>Flexbox</span><span>Responsive</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/twitter/login.html" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/twitter" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('twitter')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/Tina-Tutors/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/Tina-Tutors" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('tutors')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Google Keep Clone -->
-                <article class="project-card">
-                    <div class="project-image proj-keep">
-                        <div class="proj-img-label">
-                            <i data-lucide="sticky-note" class="proj-lucide-icon"></i>
-                            <span>Google Keep Clone</span>
+                    <!-- Online Store -->
+                    <article class="project-card">
+                        <div class="project-image proj-store">
+                            <div class="proj-img-label">
+                                <i data-lucide="shopping-bag" class="proj-lucide-icon"></i>
+                                <span>Online Store</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-personal">Personal Project</p>
-                        <h2>Google Keep Clone</h2>
-                        <p class="project-type">React · JavaScript · CSS</p>
-                        <p class="project-description">
-                            A note-taking app inspired by Google Keep — built
-                            with reusable React components and interactive
-                            state management.
-                        </p>
-                        <div class="project-tags">
-                            <span>React</span><span>JavaScript</span><span>CSS</span><span>Vite</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-clone">Clone</p>
+                            <h2>Tina's Online Store</h2>
+                            <p class="project-type">HTML · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A functional e-commerce storefront with product listings
+                                and cart interactions — built to practise multi-section
+                                layouts and JS DOM manipulation.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Grid</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/Tina-s-Online-Store/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/Tina-s-Online-Store" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('onlinestore')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://clinquant-heliotrope-a0a5e5.netlify.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/google-keep-clone-0.2" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('keep')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- To-Do List -->
-                <article class="project-card">
-                    <div class="project-image proj-todo">
-                        <div class="proj-img-label">
-                            <i data-lucide="check-square" class="proj-lucide-icon"></i>
-                            <span>To-Do List</span>
+                    <!-- YouTube Clone -->
+                    <article class="project-card">
+                        <div class="project-image proj-youtube">
+                            <div class="proj-img-label">
+                                <i data-lucide="play-circle" class="proj-lucide-icon"></i>
+                                <span>YouTube Clone</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-personal">Personal Project</p>
-                        <h2>To-Do List</h2>
-                        <p class="project-type">HTML · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A task management app with Local Storage persistence —
-                            tasks survive page refreshes, UI stays clean
-                            and responsive.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-clone">Clone</p>
+                            <h2>YouTube Clone</h2>
+                            <p class="project-type">HTML · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A YouTube-inspired interface to practise responsive
+                                layouts, sidebar navigation, and frontend component
+                                structure.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://tina-youtube.netlify.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/youtube" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('youtube')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/My-To-Do-List/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/My-To-Do-List" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('todo')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Sports Team Finder -->
-                <article class="project-card">
-                    <div class="project-image proj-sports">
-                        <div class="proj-img-label">
-                            <i data-lucide="trophy" class="proj-lucide-icon"></i>
-                            <span>Sports Team Finder</span>
+                    <!-- Netflix Clone -->
+                    <article class="project-card">
+                        <div class="project-image proj-netflix">
+                            <div class="proj-img-label">
+                                <i data-lucide="film" class="proj-lucide-icon"></i>
+                                <span>Netflix Clone</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-personal">Personal Project</p>
-                        <h2>Sports Team Finder</h2>
-                        <p class="project-type">React · API Integration</p>
-                        <p class="project-description">
-                            A React app that fetches live sports team data
-                            from TheSportsDB API and displays it
-                            dynamically.
-                        </p>
-                        <div class="project-tags">
-                            <span>React</span><span>API</span><span>CSS</span><span>JavaScript</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-clone">Clone</p>
+                            <h2>Netflix Clone</h2>
+                            <p class="project-type">HTML · CSS · Responsive Design</p>
+                            <p class="project-description">
+                                A responsive Netflix-inspired landing page to practise
+                                HTML structure, CSS layout, and media query-driven
+                                responsive design.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>Responsive</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/Tina_Netflix_Landing_Page_Clone/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/Tina_Netflix_Landing_Page_Clone" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('netflix')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/sports-team-finder" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('sports')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-            </div><!-- /slider personal -->
+                </div><!-- /slider clones -->
+
+                <button class="slider-btn slider-next" onclick="slide('clones', 1)" aria-label="Next">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div><!-- /slider-wrap -->
 
 
             <!-- ==================================================
-                 2. COLLABORATION
+                 SECTION 2: PERSONAL & CLIENT
             =================================================== -->
             <div class="category-header slide-up">
-                <span class="cat-number">02</span>
-                <div class="cat-header-text">
-                    <span class="cat-pill cat-collab">Collaboration</span>
-                    <h2 class="cat-title">Built With Others</h2>
-                    <p class="cat-desc">Team projects — learning to collaborate, review code, and ship together.</p>
-                </div>
+                <span class="cat-pill cat-personal">Personal &amp; Client</span>
+                <h2 class="cat-title">Built for Real People</h2>
+                <p class="cat-desc">Planned, designed, and delivered independently — some for real clients.</p>
             </div>
 
-            <div class="projects-slider">
+            <div class="slider-wrap">
+                <button class="slider-btn slider-prev" onclick="slide('personal', -1)" aria-label="Previous">
+                    <i data-lucide="chevron-left"></i>
+                </button>
 
-                <!-- 404 Error Page -->
-                <article class="project-card">
-                    <div class="project-image proj-404">
-                        <div class="proj-img-label">
-                            <i data-lucide="alert-triangle" class="proj-lucide-icon"></i>
-                            <span>404 Error Page</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-collab">Collaboration</p>
-                        <h2>404 Error Page</h2>
-                        <p class="project-type">React · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A custom 404 page built collaboratively — designed
-                            to keep users engaged and guide them back with
-                            a clear, on-brand experience.
-                        </p>
-                        <div class="project-tags">
-                            <span>React</span><span>CSS</span><span>JavaScript</span><span>UX</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://error404-jade.vercel.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/naledimathebula/error404" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('error404')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                <div class="projects-slider" id="personal">
 
-                <!-- iHub Prototype -->
-                <article class="project-card">
-                    <div class="project-image proj-ihub">
-                        <div class="proj-img-label">
-                            <i data-lucide="lightbulb" class="proj-lucide-icon"></i>
-                            <span>iHub Prototype</span>
+                    <!-- Mvuleni Logistix -->
+                    <article class="project-card">
+                        <div class="project-image proj-logistix">
+                            <div class="proj-img-label">
+                                <i data-lucide="truck" class="proj-lucide-icon"></i>
+                                <span>Mvuleni Logistix</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-collab">Collaboration</p>
-                        <h2>iHub Client Website Prototype</h2>
-                        <p class="project-type">HTML · CSS · JavaScript · Figma</p>
-                        <p class="project-description">
-                            A responsive client website prototype built as a
-                            team project — presenting services clearly
-                            across all devices.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Team</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-personal">Client Work</p>
+                            <h2>Mvuleni Logistix</h2>
+                            <p class="project-type">HTML · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A professional business website built for a real logistics
+                                client. Includes hero, services, about and contact —
+                                fully responsive.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Client</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/mvuleni-logistix-website/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/mvuleni-logistix-website" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('logistix')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://client-website-prototype-i-hub.vercel.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/KMukendi10/Client-Website-Prototype-iHub" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('ihub')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-            </div><!-- /slider collab -->
+                    <!-- Tina Tutors -->
+                    <article class="project-card">
+                        <div class="project-image proj-tutors">
+                            <div class="proj-img-label">
+                                <i data-lucide="graduation-cap" class="proj-lucide-icon"></i>
+                                <span>Tina Tutors</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="proj-pill pill-personal">Personal Project</p>
+                            <h2>Tina Tutors</h2>
+                            <p class="project-type">HTML · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A tutoring service website I designed and built for myself.
+                                Features subject listings, booking info, and a contact
+                                form — built mobile-first.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Mobile-First</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/Tina-Tutors/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/Tina-Tutors" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('tutors')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Google Keep -->
+                    <article class="project-card">
+                        <div class="project-image proj-keep">
+                            <div class="proj-img-label">
+                                <i data-lucide="sticky-note" class="proj-lucide-icon"></i>
+                                <span>Google Keep Clone</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="proj-pill pill-personal">Personal Project</p>
+                            <h2>Google Keep Clone</h2>
+                            <p class="project-type">React · JavaScript · CSS</p>
+                            <p class="project-description">
+                                A note-taking app inspired by Google Keep — built with
+                                reusable React components and interactive state
+                                management.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span><span>JavaScript</span><span>CSS</span><span>Vite</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://clinquant-heliotrope-a0a5e5.netlify.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/google-keep-clone-0.2" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('keep')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- To-Do List -->
+                    <article class="project-card">
+                        <div class="project-image proj-todo">
+                            <div class="proj-img-label">
+                                <i data-lucide="check-square" class="proj-lucide-icon"></i>
+                                <span>To-Do List</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="proj-pill pill-personal">Personal Project</p>
+                            <h2>To-Do List</h2>
+                            <p class="project-type">HTML · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A task management app with Local Storage persistence —
+                                tasks survive page refreshes and the UI stays
+                                clean and responsive.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://ayandarrrr.github.io/My-To-Do-List/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/My-To-Do-List" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('todo')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sports Team Finder -->
+                    <article class="project-card">
+                        <div class="project-image proj-sports">
+                            <div class="proj-img-label">
+                                <i data-lucide="trophy" class="proj-lucide-icon"></i>
+                                <span>Sports Team Finder</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="proj-pill pill-personal">Personal Project</p>
+                            <h2>Sports Team Finder</h2>
+                            <p class="project-type">React · API Integration</p>
+                            <p class="project-description">
+                                A React sports search app that fetches live team
+                                information from TheSportsDB API and displays
+                                it dynamically.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span><span>API</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Ayandarrrr/sports-team-finder" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('sports')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /slider personal -->
+
+                <button class="slider-btn slider-next" onclick="slide('personal', 1)" aria-label="Next">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
 
 
             <!-- ==================================================
-                 3. UI CLONES
+                 SECTION 3: COLLABORATION
             =================================================== -->
             <div class="category-header slide-up">
-                <span class="cat-number">03</span>
-                <div class="cat-header-text">
-                    <span class="cat-pill cat-clone">UI Clones</span>
-                    <h2 class="cat-title">Learning by Rebuilding</h2>
-                    <p class="cat-desc">Built from scratch by studying real products — no templates, no shortcuts.</p>
-                </div>
+                <span class="cat-pill cat-collab">Collaboration</span>
+                <h2 class="cat-title">Built With Others</h2>
+                <p class="cat-desc">Team projects — learning to collaborate, review code, and ship together.</p>
             </div>
 
-            <div class="projects-slider">
+            <div class="slider-wrap">
+                <button class="slider-btn slider-prev" onclick="slide('collab', -1)" aria-label="Previous">
+                    <i data-lucide="chevron-left"></i>
+                </button>
 
-                <!-- Twitter / X Login -->
-                <article class="project-card">
-                    <div class="project-image proj-twitter">
-                        <div class="proj-img-label">
-                            <i data-lucide="twitter" class="proj-lucide-icon"></i>
-                            <span>Twitter / X Login</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-clone">Clone</p>
-                        <h2>Twitter / X Login Page</h2>
-                        <p class="project-type">HTML · CSS · Responsive Design</p>
-                        <p class="project-description">
-                            A pixel-accurate recreation of the Twitter/X login page —
-                            form styling, centred layouts, responsive design,
-                            no frameworks.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>Flexbox</span><span>Responsive</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/twitter/login.html" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/twitter" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('twitter')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                <div class="projects-slider" id="collab">
 
-                <!-- Online Store -->
-                <article class="project-card">
-                    <div class="project-image proj-store">
-                        <div class="proj-img-label">
-                            <i data-lucide="shopping-bag" class="proj-lucide-icon"></i>
-                            <span>Online Store</span>
+                    <!-- 404 Error Page -->
+                    <article class="project-card">
+                        <div class="project-image proj-404">
+                            <div class="proj-img-label">
+                                <i data-lucide="alert-triangle" class="proj-lucide-icon"></i>
+                                <span>404 Error Page</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-clone">Clone</p>
-                        <h2>Tina's Online Store</h2>
-                        <p class="project-type">HTML · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A fully functional e-commerce storefront with
-                            product listings and cart interactions — multi-section
-                            layouts and JS DOM practice.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Grid</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-collab">Collaboration</p>
+                            <h2>404 Error Page</h2>
+                            <p class="project-type">React · CSS · JavaScript</p>
+                            <p class="project-description">
+                                A custom 404 error page built collaboratively — designed
+                                to keep users engaged and guide them back with a
+                                clear, on-brand experience.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span><span>CSS</span><span>JavaScript</span><span>UX</span><span>Animations</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://error404-jade.vercel.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/naledimathebula/error404" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('error404')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/Tina-s-Online-Store/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/Tina-s-Online-Store" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('onlinestore')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- YouTube Clone -->
-                <article class="project-card">
-                    <div class="project-image proj-youtube">
-                        <div class="proj-img-label">
-                            <i data-lucide="play-circle" class="proj-lucide-icon"></i>
-                            <span>YouTube Clone</span>
+                    <!-- iHub Prototype -->
+                    <article class="project-card">
+                        <div class="project-image proj-ihub">
+                            <div class="proj-img-label">
+                                <i data-lucide="lightbulb" class="proj-lucide-icon"></i>
+                                <span>iHub Prototype</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-clone">Clone</p>
-                        <h2>YouTube Clone</h2>
-                        <p class="project-type">HTML · CSS · JavaScript</p>
-                        <p class="project-description">
-                            A YouTube-inspired interface — responsive layouts,
-                            sidebar navigation, and frontend component
-                            structure practice.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+                        <div class="project-content">
+                            <p class="proj-pill pill-collab">Collaboration</p>
+                            <h2>iHub Client Website Prototype</h2>
+                            <p class="project-type">HTML · CSS · JavaScript · Figma</p>
+                            <p class="project-description">
+                                A responsive client website prototype built as a team
+                                project — focused on presenting services clearly
+                                across all devices.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Team</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://client-website-prototype-i-hub.vercel.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/KMukendi10/Client-Website-Prototype-iHub" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <button type="button" class="btn btn-case" onclick="openCaseStudy('ihub')">
+                                    <i data-lucide="book-open"></i> Case Study
+                                </button>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://tina-youtube.netlify.app/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/youtube" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('youtube')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Netflix Clone -->
-                <article class="project-card">
-                    <div class="project-image proj-netflix">
-                        <div class="proj-img-label">
-                            <i data-lucide="film" class="proj-lucide-icon"></i>
-                            <span>Netflix Clone</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="proj-pill pill-clone">Clone</p>
-                        <h2>Netflix Clone</h2>
-                        <p class="project-type">HTML · CSS · Responsive Design</p>
-                        <p class="project-description">
-                            A responsive Netflix-inspired landing page — HTML
-                            structure, CSS layout, and media query-driven
-                            responsive design practice.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>Responsive</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://ayandarrrr.github.io/Tina_Netflix_Landing_Page_Clone/" class="btn btn-live" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Ayandarrrr/Tina_Netflix_Landing_Page_Clone" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                                <i data-lucide="github"></i> GitHub
-                            </a>
-                            <button type="button" class="btn btn-case" onclick="openCaseStudy('netflix')">
-                                <i data-lucide="book-open"></i> Case Study
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                </div><!-- /slider collab -->
 
-            </div><!-- /slider clones -->
+                <button class="slider-btn slider-next" onclick="slide('collab', 1)" aria-label="Next">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
 
         </div>
     </section>
@@ -517,24 +538,120 @@
 </main>
 
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 <footer class="footer">
     <p>Designed &amp; Developed by Tina Ayanda Fezani &copy; 2026</p>
 </footer>
 
 
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 <script>
+
+/* --------------------------------------------------
+   SLIDER — scroll left/right by one card width
+-------------------------------------------------- */
+function slide(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    const cardWidth = slider.querySelector('.project-card').offsetWidth + 28; // card + gap
+    slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+}
+
+/* --------------------------------------------------
+   CASE STUDIES DATA
+-------------------------------------------------- */
 const caseStudies = {
-    twitter: { title:"Twitter / X Login Page", overview:"A pixel-accurate clone of the Twitter/X login page — built to sharpen HTML and CSS fundamentals without any framework.", built:"Rebuilt the split-layout login page from scratch using only HTML and CSS, focusing on form styling, centering techniques, and responsive behaviour.", technologies:["HTML","CSS","Flexbox","Responsive Design"], challenges:"Getting the centred split-layout to behave correctly across different viewport sizes without a framework.", learned:"Deepened understanding of responsive layout fundamentals, CSS form styling, and how to recreate a real UI without shortcuts." },
-    onlinestore: { title:"Tina's Online Store", overview:"A fully functional e-commerce storefront built to practise multi-section page structure and JavaScript DOM interactions.", built:"Built a realistic store interface with a header, hero, product grid, and footer. Used CSS Grid and vanilla JS for cart interactions.", technologies:["HTML","CSS","JavaScript","CSS Grid"], challenges:"Structuring a multi-section page that looks and feels like a real store while keeping the code clean.", learned:"Gained confidence building multi-component page layouts and managing UI state with vanilla JavaScript." },
-    youtube: { title:"YouTube Clone", overview:"A YouTube-inspired frontend project to practise page structure, navigation, and responsive layouts.", built:"Recreated the structure of a video platform with responsive layouts, sidebar, and video grid.", technologies:["HTML","CSS","JavaScript","Responsive Design"], challenges:"Keeping the layout visually consistent across different screen sizes.", learned:"Improved understanding of responsive web design and building interfaces that work across devices." },
-    netflix: { title:"Netflix Clone", overview:"A responsive Netflix-inspired landing page built to practise HTML structure, CSS layout, and media query-driven design.", built:"Recreated the visual structure of a streaming platform landing page focusing on layout, typography, and responsiveness.", technologies:["HTML","CSS","Responsive Design"], challenges:"Matching the visual structure while making the page fully responsive.", learned:"Strengthened HTML and CSS skills and confidence in creating responsive layouts from a visual reference." },
-    logistix: { title:"Mvuleni Logistix", overview:"A professional website built for a real logistics client who needed an online presence.", built:"Ran a requirements session, sketched a Figma layout, then built the full site with semantic HTML, CSS custom properties, and vanilla JS.", technologies:["HTML","CSS","JavaScript","Figma","Responsive Design"], challenges:"Translating the client's brand and services into a clean digital experience without a formal design brief.", learned:"Gained real experience managing a stakeholder relationship and delivering a live website to a client." },
-    tutors: { title:"Tina Tutors", overview:"A tutoring service website I designed and built for myself to promote sessions and make it easy for students to get in touch.", built:"Adopted a mobile-first approach with clear CTAs and a contact form, focused on readability and approachability.", technologies:["HTML","CSS","JavaScript","Mobile-First Design","Forms"], challenges:"Making the site feel warm and approachable while still looking professional.", learned:"Deepened understanding of user-focused design and mobile-first CSS strategy." },
-    keep: { title:"Google Keep Clone", overview:"A productivity app inspired by Google Keep — built to practise React, reusable components, and state management.", built:"Created a note-taking interface with add, display, and delete functionality using React components.", technologies:["React","JavaScript","CSS","Vite","State Management"], challenges:"Managing application state and keeping components working together consistently.", learned:"Better understanding of React component structure, state management, and building interactive interfaces." },
-    todo: { title:"To-Do List", overview:"A task management app built to practise JavaScript and browser-based data persistence.", built:"Built an interactive to-do list where tasks persist via Local Storage after a page refresh.", technologies:["HTML","CSS","JavaScript","Local Storage"], challenges:"Making sure task data was correctly updated and stored while keeping the UI simple.", learned:"Strengthened JavaScript fundamentals and learned how to work with Local Storage and dynamic DOM updates." },
-    sports: { title:"Sports Team Finder", overview:"A React sports search app created to practise working with external APIs and displaying dynamic data.", built:"Built an interface where users search for teams and view data from TheSportsDB API.", technologies:["React","JavaScript","API","CSS","Vite"], challenges:"Handling API data and loading states correctly.", learned:"Strengthened understanding of API integration, React components, and displaying dynamic content." },
-    error404: { title:"404 Error Page", overview:"A custom 404 page created collaboratively — turning a broken link into a friendly, on-brand experience.", built:"Contributed to a responsive error page with CSS animations and clear navigation back to the main site.", technologies:["React","CSS","JavaScript","Responsive Design"], challenges:"Creating something visually engaging while working collaboratively and aligning on design decisions.", learned:"Improved collaboration, Git workflow, and how small interface details can improve user experience." },
-    ihub: { title:"iHub Client Website Prototype", overview:"A responsive client website prototype built as a team project.", built:"Collaborated on a modern website structure, splitting responsibilities across layout, content, and responsiveness.", technologies:["HTML","CSS","JavaScript","Figma","Responsive Design"], challenges:"Clear communication and making sure every team member's work fit together cohesively.", learned:"Developed teamwork, communication, and frontend skills with a client-focused mindset." }
+    twitter: {
+        title: "Twitter / X Login Page",
+        overview: "A pixel-accurate clone of the Twitter/X login page — built to sharpen HTML and CSS fundamentals without any framework.",
+        built: "Rebuilt the split-layout login page from scratch using only HTML and CSS, focusing on form styling, centering, and responsive behaviour.",
+        technologies: ["HTML", "CSS", "Flexbox", "Responsive Design"],
+        challenges: "Getting the centred split-layout to behave correctly across viewport sizes without a framework required careful use of Flexbox and media queries.",
+        learned: "Deepened understanding of responsive layout fundamentals, CSS form styling, and recreating a real UI without shortcuts."
+    },
+    onlinestore: {
+        title: "Tina's Online Store",
+        overview: "A functional e-commerce storefront built to practise multi-section page structure and JavaScript DOM interactions.",
+        built: "Built a store interface with header, hero, product grid, and footer. CSS Grid for listings, vanilla JS for cart interactions.",
+        technologies: ["HTML", "CSS", "JavaScript", "CSS Grid"],
+        challenges: "Structuring a multi-section page that looks and feels like a real store while keeping the code clean.",
+        learned: "Gained confidence building multi-component layouts and managing UI state with vanilla JavaScript."
+    },
+    youtube: {
+        title: "YouTube Clone",
+        overview: "A YouTube-inspired frontend project to practise page structure, navigation, and responsive layouts.",
+        built: "Recreated the video platform structure with responsive layouts including a sidebar and video grid.",
+        technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+        challenges: "Keeping the layout consistent across screen sizes required careful spacing and responsive behaviour.",
+        learned: "Improved understanding of responsive design, layout structure, and cross-device interfaces."
+    },
+    netflix: {
+        title: "Netflix Clone",
+        overview: "A responsive Netflix-inspired landing page to practise HTML structure, CSS layout, and media queries.",
+        built: "Recreated the streaming platform landing page with focus on layout, typography, and responsive behaviour.",
+        technologies: ["HTML", "CSS", "Responsive Design"],
+        challenges: "Matching the visual structure while keeping it responsive required careful CSS layouts and media queries.",
+        learned: "Strengthened HTML and CSS skills and gained confidence with responsive layouts from a visual reference."
+    },
+    logistix: {
+        title: "Mvuleni Logistix",
+        overview: "A professional website built for a real logistics client who needed an online presence.",
+        built: "Ran requirements session, sketched in Figma, then built the full site with semantic HTML, CSS custom properties, and vanilla JS.",
+        technologies: ["HTML", "CSS", "JavaScript", "Figma", "Responsive Design"],
+        challenges: "Translating the client's business identity into a clean digital experience without a formal design brief.",
+        learned: "Gained real experience managing a stakeholder relationship and delivering a live website to a client."
+    },
+    tutors: {
+        title: "Tina Tutors",
+        overview: "A tutoring service website I designed and built for myself to promote sessions and make it easy for students to get in touch.",
+        built: "Mobile-first approach with soft colour palette, clear CTAs, and a contact form. Focused on readability and approachability.",
+        technologies: ["HTML", "CSS", "JavaScript", "Mobile-First Design", "Forms"],
+        challenges: "Making the site feel warm and approachable while still looking professional.",
+        learned: "Deepened understanding of user-focused design and mobile-first CSS strategy."
+    },
+    keep: {
+        title: "Google Keep Clone",
+        overview: "A productivity app inspired by Google Keep — created to practise React, reusable components, and state management.",
+        built: "Note-taking interface using reusable React components with add, display, and delete functionality.",
+        technologies: ["React", "JavaScript", "CSS", "Vite", "State Management"],
+        challenges: "Managing state and keeping different components working together consistently.",
+        learned: "Better understanding of React component structure and building interactive interfaces."
+    },
+    todo: {
+        title: "To-Do List",
+        overview: "A task management app to practise JavaScript functionality and browser-based data persistence.",
+        built: "Interactive to-do list with add, complete, and remove tasks. Local Storage keeps tasks after refresh.",
+        technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
+        challenges: "Making sure task data was correctly updated and stored while keeping the interface simple.",
+        learned: "Strengthened JavaScript fundamentals and learned how to work with Local Storage and DOM updates."
+    },
+    sports: {
+        title: "Sports Team Finder",
+        overview: "A React sports search app to practise working with external APIs and displaying dynamic data.",
+        built: "Interface where users search for sports teams and view information from TheSportsDB API.",
+        technologies: ["React", "JavaScript", "API", "CSS", "Vite"],
+        challenges: "Working with API data and handling returned information and loading states correctly.",
+        learned: "Strengthened API integration, React components, and displaying dynamic content."
+    },
+    error404: {
+        title: "404 Error Page",
+        overview: "A custom 404 page built collaboratively — turning a broken link into a friendly, on-brand experience.",
+        built: "Responsive error page with CSS animations and clear navigation back to the main site.",
+        technologies: ["React", "CSS", "JavaScript", "Responsive Design"],
+        challenges: "Creating something visually engaging while collaborating and aligning on design decisions.",
+        learned: "Improved collaboration, Git workflow, and how small details can improve user experience."
+    },
+    ihub: {
+        title: "iHub Client Website Prototype",
+        overview: "A responsive client website prototype built as a team project.",
+        built: "Collaborated on a modern website structure using Figma for alignment before building.",
+        technologies: ["HTML", "CSS", "JavaScript", "Figma", "Responsive Design"],
+        challenges: "Working as a team required clear communication and making sure every piece fit together.",
+        learned: "Developed teamwork, communication, and frontend skills with a client-focused mindset."
+    }
 };
 
 function openCaseStudy(project) {
@@ -545,18 +662,27 @@ function openCaseStudy(project) {
     document.getElementById("caseStudyBuilt").textContent      = study.built;
     document.getElementById("caseStudyChallenges").textContent = study.challenges;
     document.getElementById("caseStudyLearned").textContent    = study.learned;
-    const tc = document.getElementById("caseStudyTech");
-    tc.innerHTML = "";
-    study.technologies.forEach(t => { const s = document.createElement("span"); s.textContent = t; tc.appendChild(s); });
+    const techContainer = document.getElementById("caseStudyTech");
+    techContainer.innerHTML = "";
+    study.technologies.forEach(function(tech) {
+        const tag = document.createElement("span");
+        tag.textContent = tech;
+        techContainer.appendChild(tag);
+    });
     document.getElementById("caseStudyModal").classList.add("active");
     document.body.style.overflow = "hidden";
     lucide.createIcons();
 }
+
 function closeCaseStudy() {
     document.getElementById("caseStudyModal").classList.remove("active");
     document.body.style.overflow = "";
 }
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeCaseStudy(); });
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeCaseStudy();
+});
+
 </script>
 
 <script src="js/script.js"></script>
