@@ -2329,3 +2329,548 @@ footer{
     height: 13px;
     flex-shrink: 0;
 }
+
+
+/* =====================================================
+   HERO — NO PHOTO, ANIMATED BLOB
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 8% 80px;
+    gap: 60px;
+}
+
+.hero-content { flex: 1; max-width: 620px; }
+
+.hero-visual {
+    flex: 0 0 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animated concentric ring blob */
+.hero-blob {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255,79,139,0.25);
+    animation: ringPulse 3s ease-in-out infinite;
+}
+
+.blob-ring-1 {
+    width: 340px;
+    height: 340px;
+    animation-delay: 0s;
+}
+
+.blob-ring-2 {
+    width: 260px;
+    height: 260px;
+    animation-delay: 0.5s;
+    border-color: rgba(255,79,139,0.35);
+}
+
+@keyframes ringPulse {
+    0%, 100% { transform: scale(1);    opacity: 0.6; }
+    50%       { transform: scale(1.05); opacity: 1;   }
+}
+
+.blob-core {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, #3a0d1f 0%, #0d0d0d 70%);
+    border: 1px solid rgba(255,79,139,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(255,79,139,0.2);
+    animation: coreGlow 3s ease-in-out infinite;
+}
+
+@keyframes coreGlow {
+    0%, 100% { box-shadow: 0 0 40px rgba(255,79,139,0.2); }
+    50%       { box-shadow: 0 0 70px rgba(255,79,139,0.4); }
+}
+
+.blob-label {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Poppins', monospace;
+    color: var(--pink);
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   HERO ACTIONS (3-button row)
+===================================================== */
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 26px;
+    border: 1px solid var(--border);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .95rem;
+    transition: border-color .3s, color .3s, transform .3s;
+}
+
+.outline-btn:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO SOCIALS
+===================================================== */
+
+.hero-socials {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.hero-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color .3s, transform .3s;
+}
+
+.hero-socials a:hover {
+    border-color: var(--pink);
+    transform: translateY(-3px);
+}
+
+.social-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity .3s;
+}
+
+.hero-socials a:hover .social-icon-img { opacity: 1; }
+
+
+/* =====================================================
+   SKILLS STRIP
+===================================================== */
+
+.skills-strip {
+    padding: 36px 8%;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.skills-strip .section-label {
+    color: var(--pink);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-row span {
+    background: #181818;
+    border: 1px solid var(--border);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 500;
+    transition: border-color .3s, color .3s;
+}
+
+.skills-row span:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+
+/* =====================================================
+   WHAT I DO
+===================================================== */
+
+.what-i-do {
+    padding: 80px 8%;
+}
+
+.what-i-do .section-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.what-i-do .section-heading h2 {
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;
+}
+
+.what-i-do .section-heading p {
+    color: var(--grey);
+    line-height: 1.7;
+}
+
+.what-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.what-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px 24px;
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+
+.what-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--pink);
+    box-shadow: 0 12px 30px rgba(255,79,139,0.15);
+}
+
+.what-icon-wrap {
+    width: 46px;
+    height: 46px;
+    background: rgba(255,79,139,0.1);
+    border: 1px solid rgba(255,79,139,0.25);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: var(--pink);
+}
+
+.what-icon-wrap svg {
+    width: 22px;
+    height: 22px;
+}
+
+.what-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.what-card p {
+    color: var(--grey);
+    font-size: .88rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   STATS ROW
+===================================================== */
+
+.stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 50px 8%;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: #111111;
+}
+
+.stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: var(--pink);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    display: block;
+    color: var(--grey);
+    font-size: .85rem;
+    letter-spacing: 0.5px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 50px;
+    background: var(--border);
+}
+
+
+/* =====================================================
+   FEATURED PROJECT
+===================================================== */
+
+.featured-project {
+    padding: 80px 8%;
+}
+
+.featured-project .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-project .section-heading h2 {
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    overflow: hidden;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+.featured-card:hover {
+    border-color: var(--pink);
+    box-shadow: 0 15px 40px rgba(255,79,139,0.15);
+}
+
+.featured-img {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj-logistix-bg {
+    background: radial-gradient(ellipse at 40% 50%, #0d2e1a 0%, #0d0d0d 80%);
+}
+
+.featured-img-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.featured-img-inner svg {
+    width: 52px;
+    height: 52px;
+    opacity: 0.9;
+}
+
+.featured-img-inner span {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.featured-info {
+    padding: 44px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.featured-info h3 {
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 12px 0 14px;
+}
+
+.featured-info > p {
+    color: var(--grey);
+    line-height: 1.8;
+    font-size: .95rem;
+}
+
+.featured-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+
+/* =====================================================
+   CTA BANNER
+===================================================== */
+
+.cta-banner {
+    margin: 0 8% 80px;
+    padding: 50px 50px;
+    background: linear-gradient(135deg, #1a0810 0%, #0d0d0d 60%);
+    border: 1px solid rgba(255,79,139,0.25);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-content h2 {
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8px;
+}
+
+.cta-content p {
+    color: var(--grey);
+    font-size: .95rem;
+}
+
+
+/* =====================================================
+   PROJECT CARDS — SVG ICON (replaces emoji)
+===================================================== */
+
+.proj-svg-icon {
+    width: 44px;
+    height: 44px;
+    stroke: #ff4f8b;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+.proj-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.proj-img-label span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.85;
+    letter-spacing: 0.3px;
+}
+
+
+/* =====================================================
+   SECTION HEADING (shared)
+===================================================== */
+
+.section-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.section-heading .section-label {
+    color: var(--pink);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--grey);
+    font-size: .95rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   RESPONSIVE — HOMEPAGE
+===================================================== */
+
+@media (max-width: 1100px) {
+    .what-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 130px;
+        text-align: center;
+        gap: 50px;
+    }
+    .hero-content { max-width: 100%; }
+    .hero-actions  { justify-content: center; }
+    .hero-socials  { justify-content: center; }
+    .hero-visual   { flex: 0 0 auto; }
+    .hero-blob, .blob-ring-1 { width: 260px; height: 260px; }
+    .blob-ring-2   { width: 200px; height: 200px; }
+    .blob-core     { width: 140px; height: 140px; }
+    .featured-card { grid-template-columns: 1fr; }
+    .featured-img  { min-height: 200px; }
+    .featured-info { padding: 30px; }
+    .cta-banner    { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 650px) {
+    .hero h1       { font-size: 2rem; }
+    .what-grid     { grid-template-columns: 1fr; }
+    .stats-row     { flex-wrap: wrap; gap: 20px; padding: 40px 5%; }
+    .stat-divider  { display: none; }
+    .hero-actions  { flex-direction: column; align-items: center; }
+    .primary-btn, .secondary-btn, .outline-btn { width: 100%; max-width: 280px; justify-content: center; }
+    .cta-banner    { margin: 0 5% 60px; padding: 36px 24px; }
+}
