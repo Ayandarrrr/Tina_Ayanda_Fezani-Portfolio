@@ -1036,3 +1036,18 @@ footer{
     .what-i-do { padding: 60px 5%; }
     .featured-project { padding: 0 5% 80px; }
 }
+
+
+/* =====================================================
+   CONTACT — ICON
+===================================================== */
+
+.contact-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.contact-card {
+    text-decoration: none;
+}
